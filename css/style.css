@@ -99,7 +99,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .body-header{
     height: 707px;
     background-color: #0E100F;
-    background-image: url(./img/header-background.png);
+    background-image: url(https://github.com/LozunskuiVasul/Tetalabs/blob/main/img/header-background.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;   
 }
