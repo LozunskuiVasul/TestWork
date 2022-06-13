@@ -1,932 +1,339 @@
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,500;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-.site{
-    max-width: 1440px;
-}
-/*  HEADER */
-.header-content{
-    background:  #0E100F;
-    height: 140px;
-    display: flex;
-    flex-direction: row; 
-    align-items: center;  
-}
-.logo-site{
-    padding-left: 120px;
-    padding-bottom: 20px;
-    align-items: center;
-    flex: 1 1 auto;
-}
-.logo{
-    width: 140.5px;
-    height: 36px;
-}
-.flex-menu{ 
-    width: 545px;
-    color: #FFFFFF;
-}
-.menu-header{
-    display: flex;
-    font-size: 14px;
-    line-height: 18px;
-    align-items: center;
-    text-align: right;
-    justify-content: space-between;
-}
-.menu-header a{
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    color:#FFFFFF;
-    font-weight: 400;
-    position:relative;
-}
-.menu-header:last-child{
-    padding-right: 40px;
-}
-.menu-link{
-    padding-right:15px;
-}
-.menu-link::before{
-    content: "";
-    width: 40%;
-    height: 2px;
-    background-color: #FFFFFF;
-    position: absolute;
-    left:0 ;
-    bottom: -5px; 
-    border-radius: 2px;
-    transform: scale(0);
-}
-.menu-header a:hover{
-    font-weight: 700;
-}
-.menu-header a:hover::before{
-    transform: scale(1);
-}
-.button-contactUS{
-    width: 202px;
-    height: 48px;
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    align-items: center;
-    padding: 15px 10px 30px 20px;
-}
-.button-contact{
-    background-color: #FFFFFF;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    color: #0E100F;
-}
-/* END  HEADER */
-/*BODY HEADER*/
-.body-header{
-    overflow: hidden;
-    height: 707px;
-    background-color: #0E100F;
-    /*background-image: url(/img/header-background.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;*/
-}
-.img-background{
-    position: absolute;
-    margin-left: 563px;
-    overflow: hidden;
-}
-h2{
-    position: absolute;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 123.4%;
-    color: #FFFFFF;
-    padding-left: 240px;
-    padding-top: 113px;
-}
-h1{
-    position: absolute;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 54px;
-    line-height: 123.4%;
-    color: #FFFFFF;
-    width: 900px;
-    height: 122px;
-    padding-left:240px;
-    padding-top: 143px;
-}
-.button-download{
-    background-color: #FFFFFF;
-    height: 48px ;
-    width: 225px;
-    margin-left: 240px;
-    margin-top: 361px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-}
-.flex-row-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 166px;
-}
-.block-white{
-    background-color: #FFFFFF;
-    height: 32px;
-    width: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.flex-contact-with-us{
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    height: 32px;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: -50px;  
-}
-.flex-lenguages{
-    width: 150px;
-    color:#FFFFFF;
-}
-.lenguages {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    align-items: center;
-    text-align: right;
-}
-.lenguages a{
-    position:relative;
-    color:#FFFFFF;
-    
-}
-.link-lenguages::before{
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #FFFFFF;
-    position: absolute;
-    left:0;
-    bottom: -3px; 
-    border-radius: 2px;
-    transform: scale(0);
-}
-.lenguages a:hover::before{
-    transform: scale(1);
-}
-/* END BODY HEADER*/
-
-/*BODY Content Domains*/
-.domains{
-    max-width: 1440px;
-    height: 742px;
-}
-.title-domains{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 123.4%;
-    padding-top:100px;
-    padding-left: 240px;
-    color: #0E100F;
-}
-.text-title-domains{
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 123.4%;
-    color:#4F4F4F;
-    padding-top: 24px;
-    padding-left: 240px;
-}
-.flex-domains{
-    display: flex;
-    flex-direction: row;
-    width: 160;
-    padding-left: 240px;
-    padding-top: 80px;
-}
-.domain-tourism, .domain-entertainment, .domain-hardware, .domain-systems {
-    width: 225px;
-    height: 260px;
-    background-color: #00C0DC;
-    color:#FFFFFF;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 123.4%;
-    margin-left: 9px;
-    margin-right: 9px;
-    flex: 0 0 auto;
-}
-.domain-entertainment, .domain-systems{
-    background: #FAFAFA;
-}
-.img-tourism, .img-entertainment, .img-dom-hardware, .img-systems {
-    padding-top: 24px;
-    padding-left: 18px;
-}
-.domain-tourism{
-    margin-left: 0px;
-}
-.domain-systems{
-    margin-right: 0px;
-}
-.text-tourism, .text-entertainment, .text-dom-hardware, .text-systems{
-    color:#FFFFFF;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 123.4%;
-    padding-top: 22px;
-    text-align: center;
-}
-.text-entertainment, .text-systems{
-    color:#0E100F;
-}
-.text-domains{
-    width: 960px;
-    margin-top: 56px;
-    margin-left: 240px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 180%;
-    color: #4F4F4F;
-}
-/* END BODY Content Domains*/
-/* BODY Content Services*/
-.services{
-background: #FAFAFA;
-max-width: 1440px;
-height: 1260px;
-}
-.title-services{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 123.4%;
-    padding-top:100px;
-    padding-left: 240px;
-    color: #0E100F;
-}
-.text-title-services{
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 123.4%;
-    color:#4F4F4F;
-    padding-top: 24px;
-    padding-left: 240px;
-}
-.flex-services{
-    display: flex;
-    flex-direction: row;
-   
-    padding-left: 240px;
-    padding-top: 80px;
-}
-.services-uiux_design, .services-android, .services-ios_apps{
-    width: 307px;
-    height: 364px;
-    background: linear-gradient(211.44deg, #00C0DC 0%, #00D2C6 100%);
-    color:#FFFFFF;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 123.4%;
-    margin-left: 10px;
-    margin-right: 10px;
-    flex: 0 0 auto;
-}
-.services-android, .services-ios_apps{
-    background: #FFFFFF;
-}
-.services-uiux_design{
-    margin-left: 0px;
-}
-.services-ios_apps{
-    margin-right: 0px;
-}
-.img-design-2{
-    position: absolute;
-    padding-top: 64px;
-    padding-left: 225px;
-}
-.img-design, .img-android, .img-ios_apps{
-    position: absolute;
-    padding-left: 24px;
-    padding-top: 24px;
-}
-.text-uiux_design, .text-android, .text-ios_apps{
-    color:#FFFFFF;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 123.4%;
-    padding-top: 248px;
-    text-align: center;
-}
-.text-android, .text-ios_apps{
-    color: #0E100F;
-}
-.text-services{
-    width: 960px;
-    margin-top: 20px;
-    margin-left: 240px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 180%;
-    color: #4F4F4F;
-}
-.flex-services-developers{
-    display: flex;
-    flex-direction: row;
-    padding-left: 240px;
-    padding-top: 40px;
-   
-}
-.developer-hardware, 
-.developer-frontend,
-.developer-backend{
-    width: 307px;
-    height: 312px;
-    margin-left:10px;
-    margin-right: 10px;
-    background: #FFFFFF;
-    flex: 0 0 auto;
-}
-.developer-hardware{
-    margin-left: 0px;
-}
-.developer-backend{
-    background: linear-gradient(211.44deg, #00C0DC 0%, #00D2C6 100%);
-    margin-right: 0px;
-}
-.img-hardware, 
-.img-frontend, .img-backend{
-    position: absolute;
-    padding-left: 24px;
-    padding-top: 24px;
-}
-.text-hardware, 
-.text-frontend, .text-backend{
-    color: #0E100F;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 23px;
-    padding-top: 248px;
-    text-align: center;
-}
-.text-backend{
-    color:#FFFFFF;
-}
-/* END BODY Content Services*/
-/* BODY Content About*/
-.about{
-    max-width: 1440;
-    background: #FAFAFA;
-    height: 696px;
-}
-.absolute-about-text{
-    position: absolute;
-}
-.title-about{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 123.4%;
-    padding-top: 100px;
-    margin-left: 240px;
-}
-.text-title-about{
-    margin-top:24px;
-    margin-left: 240px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 123.4%;
-}
-.subtitle-about{
-    margin-top: 80px;
-    margin-left: 240px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 123.4%;
-}
-.text-subtitle-about{
-    margin-top: 24px;
-    margin-left: 240px;
-    width: 390px;
-}
-.img-earth-about{
-    width: 589px;
-    height: 285px;
-    margin-left: 690px;
-    margin-top: 281px;
-}
-/* END BODY Content About*/
-/* BODY Content Portfolio*/
-.portfolio{
-    background: #E5E5E5; 
-    max-width: 1440px;
-    height: 738px;
-    position: absolute;
-}
-.flex-header-portfolio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 100px;
-    margin-right: 240px;
-    margin-left: 240px;
-}
-.button-portfolio{
-    width: 143px;
-    height: 48px;
-    border: 3px solid #00C0DC;
-    color: #0E100F;
-    background: #E5E5E5; 
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;  
-}
-.title-portfolio{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 123.4%;
-    color: #0E100F;
-    }
-.text-portfolio{
-    color: #4F4F4F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 123.4%;
-    margin-left: 240px;
-    padding-top: 24px;
-}
-.left-roll-button-portfolio {
-    position: absolute;
-    margin-left: 124px;
-    margin-top: 220px;
-}
-.right-roll-button-portfolio{
-    position: absolute;
-    margin-left: 1300px;
-    margin-top: 220px;
-}
-.flex-portfolio{
-    display: flex;
-    flex-direction: row;
-    margin-left: 240px;
-    margin-top:  80px;
-    margin-right: 240px;
-    justify-content: space-between;
-    
-}
-.portfolio-1,
-.portfolio-2,
-.portfolio-3{
-    width: 307px;
-    height: 312px;
-    background: #FFFFFF;
-    margin-left: 10px;
-    margin-right: 10px;
-    flex: 0 0 auto;
-}
-.portfolio-1{
-    margin-left: 0px;
-    background: linear-gradient(211.44deg, #00C0DC 0%, #00D2C6 100%);
-}
-.portfolio-3{
-    margin-right: 0px;
-}
-.img-portfolio-1,
-.img-portfolio-2,
-.img-portfolio-3{
-    margin-left: 24px;
-    margin-top: 24px;
-}
-.text-portfolio-1,
-.text-portfolio-2,
-.text-portfolio-3{
-    margin-top: 32px; 
-    color: #0E100F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 123.4%;
-    text-align: center;
-}
-.text-portfolio-1{
-    color: #FFFFFF;
-}
-/* END BODY Content Portfolio*/
-/* BODY Content Careers*/
-.careers{
-    margin-top:738px;
-    max-width: 1440px;
-    height: 738px;
-    background: #FFFFFF;
-}
-.flex-header-careers{
-    padding-left: 240px;
-    padding-right: 240px;
-    padding-top: 100px; 
-    display: flex;
-    justify-content: space-between;
-}
-.title-careers{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 123.4%;
-    color: #0E100F;
-}
-.button-careers{
-    width: 143px;
-    height: 48px;
-    color: #FFFFFF;
-    background: linear-gradient(211.44deg, #00C0DC 0%, #00D2C6 100%);
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;  
-}
-.text-careers{
-    color: #4F4F4F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 123.4%;
-    margin-left: 240px;
-    padding-top: 24px;
-}
-.left-roll-button-careers {
-    position: absolute;
-    margin-left: 124px;
-    margin-top: 220px;
-}
-.right-roll-button-careers{
-    position: absolute;
-    margin-left: 1300px;
-    margin-top: 220px;
-}
-.flex-careers{
-    display: flex;
-    flex-direction: row;
-    margin-left: 240px;
-    margin-top:  80px;
-    margin-right: 240px;
-    justify-content: space-between;
-}
-.careers-1,
-.careers-2,
-.careers-3{
-    width: 307px;
-    height: 312px;
-    background: #FFFFFF;
-    margin-left: 10px;
-    margin-right: 10px;
-    flex: 0 0 auto;
-}
-.careers-1{
-    margin-left: 0px;
-    background: linear-gradient(211.44deg, #00C0DC 0%, #00D2C6 100%);
-}
-.careers-3{
-    margin-right: 0px;
-}
-.img-careers-1,
-.img-careers-2,
-.img-careers-3{
-    margin-left: 24px;
-    margin-top: 24px;
-}
-.text-careers-1,
-.text-careers-2,
-.text-careers-3{
-    margin-top: 32px; 
-    color: #0E100F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 123.4%;
-    text-align: center;
-}
-.text-careers-1{
-    color: #FFFFFF;
-}
-/* END BODY Content Careers*/
-/* BODY Content Blog*/
-.blog{
-    background: #FAFAFA;
-    max-width: 1440px;
-    height: 768px;
-}
-.flex-header-blog{
-    padding-left: 240px;
-    padding-right: 240px;
-    padding-top: 100px; 
-    display: flex;
-    justify-content: space-between;
-}
-.title-blog{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 123.4%;
-    color: #0E100F;
-}
-.button-blog{
-    width: 143px;
-    height: 48px;
-    color: #0E100F;
-    border: 3px solid #00C0DC;
-    background: #FAFAFA;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;  
-}
-.text-blog{
-    color: #4F4F4F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 123.4%;
-    margin-left: 240px;
-    padding-top: 24px;
-}
-.left-roll-button-blog {
-    position: absolute;
-    margin-left: 124px;
-    margin-top: 220px;
-}
-.right-roll-button-blog{
-    position: absolute;
-    margin-left: 1300px;
-    margin-top: 220px;
-}
-.flex-blog{
-    display: flex;
-    flex-direction: row;
-    margin-left: 240px;
-    margin-top:  80px;
-    margin-right: 240px;
-    justify-content: space-between;
-}
-.blog-1,
-.blog-2,
-.blog-3{
-    width: 307px;
-    height: 340px;
-    background: #FFFFFF;
-    margin-left: 10px;
-    margin-right: 10px;
-    flex: 0 0 auto;
-}
-.blog-1{
-    margin-left: 0px;
-    background: linear-gradient(211.44deg, #00C0DC 0%, #00D2C6 100%);
-}
-.blog-3{
-    margin-right: 0px;
-}
-.img-blog-1,
-.img-blog-2,
-.img-blog-3{
-width: 100%;
-height: 220px;
-}
-.title-blog-1,
-.title-blog-2,
-.title-blog-3{
-    margin-top: 16px; 
-    color: #0E100F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 123.4%;
-    text-align: center;
-}
-.title-blog-1{
-    color: #FFFFFF;
-}
-.text-blog-1,
-.text-blog-2,
-.text-blog-3{
-    margin-top: 16px; 
-    color: #4F4F4F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 170%;
-    text-align: center;
-}
-.text-blog-1{
-    color: #FAFAFA;
-}
-/* END BODY Content Blog*/
-/* BODY Content Contacts*/
-.contacts{
-  height: 690px;
-  background: #FFFFFF;
-  padding-left: 240px;
-  padding-top: 100px;
-  padding-right: 240px;
-}
-.title-contacts{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 123.4%;
-    color: #0E100F;
-}
-.text-contacts{
-    color: #4F4F4F;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 123.4%;
-    padding-top: 24px;
-}
-.flex-form-contacts{
-    padding-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.full-name-contacts,
-.content-form-contacts{
-    flex: 0 0 auto;
-    width:  470px;
-    height: 48px;
-    border: 3px solid #00C0DC;
-    padding-left: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 123.4%;
-    color: #828282;
-}
-.full-name-contacts{
-    margin-right: 20px;
-}
-.message-form-contacts{
-    margin-top: 20px;
-    flex: 0 0 auto;
-    width:  960px;
-    height: 100px;
-    border: 3px solid #00C0DC;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 123.4%;
-}
-.send-message{
-    position:absolute;
-    margin-top: 48px;
-    margin-left: 408px;
-    width: 144px;
-    height: 48px;
-    border: 3px solid #00C0DC;
-}
-/* END BODY Content Contacts*/
-/*Footer*/
-.footer-site{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 60px;
-    max-width: 1440px;
-    height: 280px;
-    background: #0E100F;
-}
-.flex-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-}
-.logo-footer{
-    padding-right: 50px;
-}
-
-.flex-contacts-with-us-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 320px;
-    height: 32px;
-}
-.menu-footer{
-    font-size: 14px;
-    line-height: 18px;
-    align-items: center;
-    text-align: right;
-    justify-content: space-between;
-    padding-left: 200px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-.menu-link-footer{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    padding-right:25px;
-    color: #FFFFFF;
-}
-.flex-aboutcookies-footer{
-    min-width: 900px;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    align-items: center;
-    margin-top: 120px;
-    color: #828282;
-    justify-content: space-around;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-}
-.text-terms-footer{
-    font-weight: 600;
-    color: #FFFFFF;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tetalabs</title>
+</head>
+<body>
+    <div class="tetalab-site">
+        <div class="site">
+            <div id="1" class="header-content">
+                <div class="logo-site">
+                    <a href="./index.html">
+                       <img class="logo" src="./img/logo_TetaLab.jpg" alt="logo-site" >
+                    </a>
+                </div>
+                <div class="flex-menu">
+                    <nav class="menu-header">
+                            <a class="menu-link" href="./img/logo_TetaLab.jpg">Home</a>
+                            <a class="menu-link" href="https://google.com">Domains</a> 
+                            <a class="menu-link" href="https://google.com">Services</a> 
+                            <a class="menu-link" href="https://google.com">About</a> 
+                            <a class="menu-link" href="https://google.com">Portfolio</a> 
+                            <a class="menu-link" href="https://google.com">Careers</a> 
+                            <a class="menu-link" href="https://google.com">Blog</a> 
+                    </nav>
+                </div>
+                <div class="button-contactUS">
+                    <button class="button-contact">Contact us</button>
+                </div>
+            </div>
+            <div class="body-header">
+                <img class="img-background" src="./img/header.png" alt="">
+                <h2>Do you want to optimize your business?</h2>
+                <h1>You need <p>new software tools</p></h1>
+                <button class="button-download">Download our portfolio</button>
+                <div class="flex-row-header">
+                    <div class="flex-contact-with-us">
+                        <div>
+                            <a href="mailto:tetalabs@gmail.com">
+                                <img src="./img/mail_header.png" alt="mail" >
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/">
+                                <img src="./img/in_header.png" alt="linkedin" >
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./">
+                                <img src="./img/up_header.png" alt="Up" >
+                            </a>
+                        </div>
+                        <div class="block-white">
+                            <a href="./">
+                                <img src="./img/Vector.png" alt="Be" >
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/">
+                                <img src="./img/f_header.png" alt="facebook" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-cnock-down">
+                        <img src="./img/Vector 8.png" alt="down">
+                    </div>
+                    <div class="flex-lenguages">
+                        <nav class="lenguages">
+                            <a class="link-lenguages" href="./index.html">En</a>
+                            <a class="link-lenguages" href="./">Ru</a>
+                            <a class="link-lenguages" href="./">Ua</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div  class="body-content">
+                <div id="2" class="domains">
+                    <div class="title title-domains">Domains</div>
+                    <div class="text text-title-domains">
+                        We have experience in a different domains
+                    </div>
+                    <div class="flex-domains">
+                        <div class="domain-tourism">
+                            <img class="img-tourism" src="./img/Domains/world_connection_ (1) 1.png" alt="img-tourism">
+                            <p class="text-tourism">Tourism</p>
+                        </div>
+                        <div class="domain-entertainment">
+                            <img class="img-entertainment" src="./img/Domains/battle 2.png" alt="img-entertainment">
+                            <p class="text-entertainment">Entertainment</p>
+                        </div>
+                        <div class="domain-hardware">
+                            <img class="img-dom-hardware" src="./img/Domains/Group 679.png" alt="img-dom-hardware">
+                            <p class="text-dom-hardware">loT (Hardware)</p>
+                        </div>
+                        <div class="domain-systems">
+                            <img class="img-systems" src="./img/Domains/Systems.png" alt="img-systems">
+                            <p class="text-systems">Ordering Systems</p>
+                        </div>
+                    </div>
+                    <p class="text-domains">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis similique modi! Expedita molestiae error aspernatur reiciendis, rerum, dolor accusamus laborum nisi esse nulla voluptas voluptatum commodi, pariatur ratione mollitia.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia, explicabo commodi quos dolorum in maiores quibusdam distinctio deserunt, cum nemo eos quae odit suscipit possimus nihil quasi saepe blanditiis.
+                    </p>
+                </div>
+                <div id="3" class="services">
+                    <div class="title title-services">Services</div>
+                    <div class="text text-title-services">
+                        We specialize in the development of multi-platform solutions
+                    </div>
+                    <div class="flex-services">
+                        <div class="services-uiux_design">
+                            <img class="img-design" src="./img/Services/design.png" alt="img-design">
+                            <img class="img-design-2" src="./img/Services/design-2.png" alt="img-design-2">
+                            <p class="text-uiux_design">UI/UX Design</p>
+                        </div>
+                        <div class="services-android">
+                            <img class="img-android" src="./img/Services/android.png" alt="img-android">
+                            <p class="text-android">Android apps</p>
+                        </div>
+                        <div class="services-ios_apps">
+                            <img class="img-ios_apps" src="./img/Services/ios_apps.png" alt="img-ios_apps">
+                            <p class="text-ios_apps">iOS apps</p>
+                        </div>
+                    </div>
+                    <p class="text-services">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis similique modi! Expedita molestiae error aspernatur reiciendis, rerum, dolor accusamus laborum nisi esse nulla voluptas voluptatum commodi, pariatur ratione mollitia.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia, explicabo commodi quos dolorum in maiores quibusdam distinctio deserunt, cum nemo eos quae odit suscipit possimus nihil quasi saepe blanditiis.
+                    </p>
+                    <div class="flex-services-developers">
+                        <div class="developer-hardware">
+                            <img class="img-hardware" src="./img/Services/hardware.png" alt="img-hardware">
+                            <p class="text-hardware">Hardware</p>
+                        </div>
+                        <div class="developer-frontend">
+                            <img class="img-frontend" src="./img/Services/frontend.png" alt="img-frontend">
+                            <p class="text-frontend">FrontEnd</p>
+                        </div>
+                        <div class="developer-backend">
+                            <img class="img-backend" src="./img/Services/backend.png" alt="img-beckend">
+                            <p class="text-backend">BackEnd</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="4" class="about">
+                    <div class="absolute-about-text">
+                        <div class="title-about">About</div>
+                        <div class="text-title-about"> a little about our company</div>
+                        <div class="subtitle-about">Path of success</div>
+                        <div class="text-subtitle-about">
+                            <p>
+                                Tetalab was founded in Lviv at a heart of Western Ukraine. We are a team of talented developers, managers, and designers. We believe that we can grow as a team by working together and making our customers happy. We are looking for new challenges and possibilities. That is why your projects and ideas may be a good fit for our team.
+                            </p>
+                            <br/>
+                            <p>
+                                We have customers from a different countries:
+                            </p>
+                            <br/>
+                            <p>
+                                — Belgium, Brazil, France, Germany, India, Norway, UK, Ukraine, USA, Vietnam, Zambia
+                            </p>
+                        </div>
+                    </div>
+                        <div class="photo-about">
+                            <img class="img-earth-about" src="./img/earth-about.png" alt="img-earth">
+                        </div>
+                </div>
+                <div id="5" class="portfolio">
+                    <div class="flex-header-portfolio">
+                        <div class="title-portfolio">Portfolio</div>
+                        <button class="button-portfolio" > View All</button>
+                    </div>
+                    <div class="text-portfolio">
+                        our latest projects in the past 2 years
+                    </div>
+                    <button class="left-roll-button-portfolio">
+                        <img src="./img/left_button-roll.png" alt="">
+                    </button>
+                    <button class="right-roll-button-portfolio">
+                        <img src="./img/right_button_roll.png" alt="">
+                    </button>
+                    <div class="flex-portfolio">
+                        <div class="portfolio-1">
+                            <img class="img-portfolio-1" src="./img/portfolio/lviv_city_guide.png" alt="img-portfolio-1">
+                            <div class="text-portfolio-1">Lviv City Guide</div>
+                        </div>
+                        <div class="portfolio-2">
+                            <img class="img-portfolio-2" src="./img/portfolio/museum_guide.png" alt="img-portfolio-2">
+                            <div class="text-portfolio-2">Museum Guide</div>
+                        </div>
+                        <div class="portfolio-3">
+                            <img class="img-portfolio-3" src="./img/portfolio/game_bacterial_war.png" alt="img-portfolio-3">
+                            <div class="text-portfolio-3">Game Bacterial War</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="6" class="careers">
+                    <div class="flex-header-careers">
+                        <div class="title-careers">Careers</div>
+                        <button class="button-careers" > View All</button>
+                    </div>
+                    <div class="text-careers">
+                        We are constantly looking for talented and ambitious people
+                    </div>
+                    <button class="left-roll-button-careers">
+                        <img src="./img/left_button-roll.png" alt="">
+                    </button>
+                    <button class="right-roll-button-careers">
+                        <img src="./img/right_button_roll.png" alt="">
+                    </button>
+                    <div class="flex-careers">
+                        <div class="careers-1">
+                            <img class="img-careers-1" src="./img/Careers/junior_sales_developer.png" alt="img-careers-1">
+                            <div class="text-careers-1">Junior Sales manager</div>
+                        </div>
+                        <div class="careers-2">
+                            <img class="img-careers-2" src="./img/Careers/junior_ios_developer.png" alt="img-careers-2">
+                            <div class="text-careers-2">Museum Guide</div>
+                        </div>
+                        <div class="careers-3">
+                            <img class="img-careers-3" src="./img/Careers/junior_qa_engineer.png" alt="img-careers-3">
+                            <div class="text-careers-3">Game Bacterial War</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="7" class="blog">
+                    <div class="flex-header-blog">
+                        <div class="title-blog">Blog</div>
+                        <button class="button-blog" > View All</button>
+                    </div>
+                    <div class="text-blog">
+                        Lorem ipsum dolor sit amet, consectetur 
+                    </div>
+                    <button class="left-roll-button-blog">
+                        <img src="./img/left_button-roll.png" alt="">
+                    </button>
+                    <button class="right-roll-button-blog">
+                        <img src="./img/right_button_roll.png" alt="">
+                    </button>
+                    <div class="flex-blog">
+                        <div class="blog-1">
+                            <img class="img-blog-1" src="./img/Blog/Art_design.png" alt="img-blog-1">
+                            <div class="title-blog-1">
+                                What is art and design? Art VS Design.
+                            </div>
+                            <div class="text-blog-1">Sep 9, 2020 · 5 min read</div>
+                        </div>
+                        <div class="blog-2">
+                            <img class="img-blog-2" src="./img/Blog/rubber-duck.png" alt="img-blog-2">
+                            <div class="title-blog-2">
+                                Rubber Duck Debugging
+                            </div>
+                            <div class="text-blog-2">Sep 24, 2020 · 9 min read</div>
+                        </div>
+                        <div class="blog-3">
+                            <img class="img-blog-3" src="./img/Blog/deadly_mistakes.png" alt="img-blog-3">
+                            <div class="title-blog-3">
+                                Deadly Mistakes to Avoid When Learning Java
+                            </div>
+                            <div class="text-blog-3">Sep 30, 2020 · 12 min read</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="8" class="contacts">
+                    <div class="title-contacts">
+                        Contact us
+                    </div>
+                    <div class="text-contacts">Talk to us for more assistance...</div>
+                    <div class="flex-form-contacts">
+                        <input class="full-name-contacts" 
+                            placeholder="Full Name" tabindex="1" type="text">
+                        <input class="content-form-contacts" 
+                            placeholder="Schwezolga" tabindex="2" type="text">
+                    </div>
+                    <textarea class="message-form-contacts"
+                        placeholder="Message" tabindex="3" type="text">
+                    </textarea>
+                    <button class="send-message" tabindex="4">Send Message</button>
+                </div>
+            </div>
+            <div class="footer-site">
+                <div class="flex-footer">
+                    <div class="logo-footer">
+                        <img src="./img/logo-footer.png" alt="">
+                    </div>
+                    <div class="contacts-with-us-footer">
+                        <div class="flex-contacts-with-us-footer">
+                            <div>
+                                <a href="mailto:tetalabs@gmail.com">
+                                    <img src="./img/mail_header.png" alt="mail" >
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/">
+                                    <img src="./img/in_header.png" alt="linkedin" >
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./">
+                                    <img src="./img/up_header.png" alt="Up" >
+                                </a>
+                            </div>
+                            <div class="block-white">
+                                <a href="./">
+                                    <img src="./img/Vector.png" alt="Be" >
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/">
+                                    <img src="./img/f_header.png" alt="facebook" >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="menu-footer">
+                        <a class="menu-link-footer" href="./img/logo_TetaLab.jpg">Home</a>
+                        <a class="menu-link-footer" href="https://google.com">Domains</a> 
+                        <a class="menu-link-footer" href="https://google.com">Services</a> 
+                        <a class="menu-link-footer" href="https://google.com">About</a> 
+                        <a class="menu-link-footer" href="https://google.com">Portfolio</a> 
+                        <a class="menu-link-footer" href="https://google.com">Careers</a> 
+                        <a class="menu-link-footer" href="https://google.com">Blog</a> 
+                        <a class="menu-link-footer" href="https://google.com">Contacts</a> 
+                    </nav>
+                </div>
+                <div class="flex-aboutcookies-footer">
+                    <div class="text-reserve-footer">
+                        © 2018–2020 TetaLab. All rights reserved  
+                    </div>
+                    <div class="text-terms-footer">Terms of Use</div>
+                    <div class="text-cookies-footer">Privacy & Cookies Policy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
