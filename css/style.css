@@ -911,11 +911,7 @@ height: 220px;
     align-items: center;
     text-align: right;
     justify-content: space-between;
-    padding-left: 200px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-   
+    padding-left: 200px;   
 }
 .menu-link-footer{
     font-family: 'Source Sans Pro', sans-serif;
