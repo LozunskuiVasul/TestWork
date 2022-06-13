@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*BODY HEADER*/
 .body-header{
     height: 707px;
-    background-image: url(./img/header-background.png);
+    background-image: url(./img/hardware.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-color: #0E100F;
