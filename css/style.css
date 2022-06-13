@@ -98,10 +98,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*BODY HEADER*/
 .body-header{
     height: 707px;
-    background-color: #0E100F;
     background-image: url(/img/1.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    background-color: #0E100F;
+    
 }
 h2{
     font-family: "Source Sans Pro", sans-serif;
