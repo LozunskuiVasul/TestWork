@@ -97,17 +97,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /* END  HEADER */
 /*BODY HEADER*/
 .body-header{
+    overflow: hidden;
     height: 707px;
     background-color: #0E100F;
-   /* background-image: url(https://github.com/LozunskuiVasul/Tetalabs/blob/main/img/header-background.png);*/
+    /*background-image: url(/img/header-background.png);
     background-repeat: no-repeat;
-    background-position: 100% 100%;   
+    background-position: 100% 100%;*/
 }
 .img-background{
     position: absolute;
-    margin-left:700px;
+    margin-left: 563px;
+    overflow: hidden;
 }
 h2{
+    position: absolute;
     font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -118,6 +121,7 @@ h2{
     padding-top: 113px;
 }
 h1{
+    position: absolute;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -127,14 +131,14 @@ h1{
     width: 900px;
     height: 122px;
     padding-left:240px;
-    padding-top: 40px;
+    padding-top: 143px;
 }
 .button-download{
     background-color: #FFFFFF;
     height: 48px ;
     width: 225px;
     margin-left: 240px;
-    margin-top: 105px;
+    margin-top: 361px;
     font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -249,8 +253,9 @@ h1{
 .domain-entertainment, .domain-systems{
     background: #FAFAFA;
 }
-.img-tourism, .img-entertainment, .img-hardware, .img-systems {
+.img-tourism, .img-entertainment, .img-dom-hardware, .img-systems {
     padding-top: 24px;
+    padding-left: 18px;
 }
 .domain-tourism{
     margin-left: 0px;
@@ -258,7 +263,7 @@ h1{
 .domain-systems{
     margin-right: 0px;
 }
-.text-tourism, .text-entertainment, .text-hardware, .text-systems{
+.text-tourism, .text-entertainment, .text-dom-hardware, .text-systems{
     color:#FFFFFF;
     font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
